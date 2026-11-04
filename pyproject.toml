@@ -1,7 +1,7 @@
 [project]
 name = "mllearn"
 version = "0.1.0"
-description = "Add your description here"
+description = "A hands-on machine learning learning lab, from fundamentals to deep learning."
 readme = "README.md"
 authors = [
     { name = "Mohd Hamid", email = "hamidmohd726@gmail.com" }
@@ -14,10 +14,9 @@ dependencies = [
     "pandas>=3.1.0",
     "scikit-learn>=1.9.1",
     "seaborn>=0.13.2",
+    "ucimlrepo>=0.0.7",
 ]
 
-[project.scripts]
-mllearn = "mllearn:main"
 
 [build-system]
 requires = ["uv_build>=0.12.21,<0.13.0"]
