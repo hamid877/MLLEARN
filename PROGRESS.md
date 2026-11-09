@@ -2,9 +2,9 @@
 
 ## Current Status
 
-- **Current Phase:** Phase 1 — Python Data Science and Jupyter
-- **Current Milestone:** Student Performance Analysis
-- **Current Activity:** Final notebook verification and repository integration
+- **Current Phase:** Phase 2 — Supervised Classical Machine Learning
+- **Current Milestone:** Linear Regression
+- **Current Activity:** Final documentation and Git integration
 - **Project:** MLlearn
 
 ## Completed
@@ -19,7 +19,9 @@
 - [x] main and develop branches established
 - [x] Project roadmap established
 
-### NumPy and pandas
+### Phase 1 — Python Data Science and Jupyter
+
+#### NumPy and pandas
 
 - [x] NumPy array creation and properties
 - [x] Dimensions, shape, axes, and data types
@@ -32,7 +34,7 @@
 - [x] Missing-value handling
 - [x] Data validation and type conversion
 
-### Data Visualization
+#### Data Visualization
 
 - [x] Matplotlib fundamentals
 - [x] Object-oriented plotting API
@@ -40,7 +42,7 @@
 - [x] Seaborn statistical visualizations
 - [x] Histograms, KDE, boxplots, scatterplots, and heatmaps
 
-### Exploratory Data Analysis
+#### Exploratory Data Analysis
 
 - [x] Synthetic student dataset EDA
 - [x] Univariate and bivariate analysis
@@ -51,7 +53,7 @@
 - [x] Preprocessing pipelines
 - [x] Data leakage prevention
 
-### Student Performance Analysis — UCI Dataset
+#### Student Performance Analysis — UCI Dataset
 
 - [x] Retrieved and inspected the UCI Student Performance dataset
 - [x] Investigated dataset structure and data types
@@ -72,7 +74,7 @@
 - [x] Investigated an extreme prediction error
 - [x] Created residual and Q-Q diagnostic plots
 
-## Current Experiment Results
+#### Phase 1 Experiment Results
 
 | Model | MAE | RMSE | R² |
 |---|---:|---:|---:|
@@ -82,20 +84,121 @@
 
 **Important:** The late prediction experiment uses G1 and G2, which are prior-period grades. Its performance should not be confused with early prediction performance.
 
-## Remaining Phase 1 Tasks
+**Phase 1 Status: Completed and integrated.**
 
-- [ ] Restart the notebook kernel and execute all cells successfully
-- [ ] Verify notebook reproducibility
-- [ ] Review notebook markdown and conclusions
-- [ ] Finalize repository documentation
-- [ ] Review Git changes and commit relevant files
-- [ ] Merge the completed work into develop
+---
 
-## Next Phase
+### Phase 2 — Supervised Classical Machine Learning
 
-Phase 2 — Supervised Classical Machine Learning.
+#### Linear Regression Fundamentals
 
-Begin with a deeper study of Linear Regression, then progress through KNN, Naive Bayes, Decision Trees, Random Forest, Gradient Boosting, and SVM.
+- [x] Understood supervised learning and regression
+- [x] Identified features (X) and target (y)
+- [x] Understood the Linear Regression equation
+- [x] Studied weights and bias
+- [x] Understood prediction using model parameters
+- [x] Studied Mean Squared Error (MSE)
+- [x] Understood cost functions
+- [x] Studied Gradient Descent
+- [x] Derived weight and bias gradients
+- [x] Understood learning rate and parameter updates
+- [x] Investigated convergence and overshooting
+
+#### Linear Regression From Scratch
+
+- [x] Implemented prediction using NumPy
+- [x] Implemented MSE calculation
+- [x] Implemented gradient calculation
+- [x] Implemented Gradient Descent training loop
+- [x] Tracked training loss across epochs
+- [x] Visualized the loss curve
+- [x] Compared learned parameters with expected parameters
+- [x] Compared scratch implementation with scikit-learn LinearRegression
+- [x] Studied feature standardization
+- [x] Investigated optimization behavior before and after scaling
+- [x] Evaluated predictions on unseen test data
+
+#### California Housing — Real-World Regression
+
+- [x] Loaded the California Housing dataset
+- [x] Inspected dataset structure and feature columns
+- [x] Examined statistical summaries and distributions
+- [x] Investigated target distribution
+- [x] Identified target capping at 5.0
+- [x] Performed correlation analysis
+- [x] Investigated feature relationships
+- [x] Created boxplots and examined potential outliers
+- [x] Checked missing values and duplicate rows
+- [x] Separated features and target
+- [x] Created training and testing datasets
+- [x] Built a StandardScaler and LinearRegression pipeline
+- [x] Trained the model
+- [x] Evaluated training and testing performance
+- [x] Visualized actual versus predicted values
+- [x] Performed residual analysis
+- [x] Investigated heteroscedasticity and prediction errors
+- [x] Interpreted standardized model coefficients
+- [x] Generated predictions for new housing records
+- [x] Documented dataset and model limitations
+
+#### California Housing Experiment Results
+
+| Metric | Training | Testing |
+|---|---:|---:|
+| MAE | 0.528628 | 0.533200 |
+| MSE | 0.517933 | 0.555892 |
+| RMSE | 0.719676 | 0.745581 |
+| R² | 0.612551 | 0.575788 |
+
+#### Key Findings
+
+- Median income has the strongest individual correlation with median house value.
+- Geographic features contribute substantially to the multivariable model.
+- Training and testing performance are relatively close.
+- Residual analysis indicates non-constant error variance.
+- The target is capped at 5.0, limiting information about expensive properties.
+- Linear Regression can produce predictions outside the observed target range.
+- The model provides a useful baseline but does not capture all patterns in the dataset.
+
+#### Linear Regression Notebooks
+
+- [x] `04_linear_regression_from_scratch.ipynb`
+- [x] `05_california_housing_regression.ipynb`
+
+**Phase 2 Linear Regression Status: Learning and experimentation completed.**
+
+## Remaining Tasks
+
+### Linear Regression — Repository Integration
+
+- [ ] Verify both notebooks execute successfully from fresh kernels
+- [ ] Review notebook Markdown and conclusions
+- [ ] Finalize README.md, ROADMAP.md, and PROGRESS.md
+- [ ] Review staged Git changes
+- [ ] Commit Linear Regression milestone
+- [ ] Push feature branch
+- [ ] Create Pull Request into develop
+- [ ] Merge into develop
+- [ ] Synchronize main with develop
+
+## Next Milestone
+
+### Phase 2 — Logistic Regression
+
+After completing the Linear Regression Git integration:
+
+- Understand classification versus regression
+- Study binary classification
+- Understand the sigmoid function
+- Study decision boundaries
+- Understand probability predictions
+- Study the logistic loss function
+- Implement Logistic Regression from scratch
+- Use scikit-learn LogisticRegression
+- Evaluate using classification metrics
+- Perform practical experiments on a real dataset
+
+Continue with KNN, Naive Bayes, Decision Trees, Random Forest, Gradient Boosting, and SVM according to ROADMAP.md.
 
 ## Learning Rules
 
