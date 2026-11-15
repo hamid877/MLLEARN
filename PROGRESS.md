@@ -167,38 +167,47 @@
 
 **Phase 2 Linear Regression Status: Learning and experimentation completed.**
 
-## Remaining Tasks
+### Logistic Regression — Completed
 
-### Linear Regression — Repository Integration
+**Theory**
+- Binary classification and probability prediction
+- Sigmoid activation function
+- Binary Cross-Entropy / Log Loss
+- Gradient Descent and chain-rule derivation
+- Decision boundaries and classification thresholds
+- Accuracy, precision, recall, F1-score and confusion matrices
+- Precision–recall trade-off
 
-- [ ] Verify both notebooks execute successfully from fresh kernels
-- [ ] Review notebook Markdown and conclusions
-- [ ] Finalize README.md, ROADMAP.md, and PROGRESS.md
-- [ ] Review staged Git changes
-- [ ] Commit Linear Regression milestone
-- [ ] Push feature branch
-- [ ] Create Pull Request into develop
-- [ ] Merge into develop
-- [ ] Synchronize main with develop
+**Implementation**
+- Implemented sigmoid, prediction, Binary Cross-Entropy and Gradient Descent using NumPy
+- Trained a Logistic Regression model from scratch
+- Compared the NumPy implementation with scikit-learn
+- Studied feature scaling and data leakage prevention
 
-## Next Milestone
+**Practical Dataset**
+- Breast Cancer Wisconsin Diagnostic dataset
+- 569 observations, 30 features
+- Malignant encoded as class 1; benign as class 0
+- Stratified train/test split
+- StandardScaler + LogisticRegression pipeline
+- Threshold analysis
+- New-record inference for both classes
 
-### Phase 2 — Logistic Regression
+**Test-set results**
 
-After completing the Linear Regression Git integration:
+| Metric | NumPy | Scikit-learn |
+|---|---:|---:|
+| Accuracy | 98.25% | 96.49% |
+| Precision | 100% | 97.50% |
+| Recall | 95.24% | 92.86% |
+| F1-score | 97.56% | 95.12% |
 
-- Understand classification versus regression
-- Study binary classification
-- Understand the sigmoid function
-- Study decision boundaries
-- Understand probability predictions
-- Study the logistic loss function
-- Implement Logistic Regression from scratch
-- Use scikit-learn LogisticRegression
-- Evaluate using classification metrics
-- Perform practical experiments on a real dataset
+**Remaining administrative work**
+- Verify notebook executes from a fresh kernel
+- Add final conclusions and interpretations
+- Commit and merge the milestone
 
-Continue with KNN, Naive Bayes, Decision Trees, Random Forest, Gradient Boosting, and SVM according to ROADMAP.md.
+**Next algorithm:** K-Nearest Neighbors (KNN).
 
 ## Learning Rules
 
