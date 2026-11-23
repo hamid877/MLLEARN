@@ -81,11 +81,15 @@
 
 Note: Results apply to the particular split and experiment; they do not establish universal model performance.
 
+#### Naive Bayes
+-[x] Gaussian Naive Bayes
+-[x] Multinomial Naive Bayes
+-[x] CategoricalS Naive Bayes
+
+
 ## In Progress
 
 ### Phase 2 — Next Algorithm
-
-- [ ] Naive Bayes
 - [ ] Decision Trees
 - [ ] Random Forest
 - [ ] Gradient Boosting
