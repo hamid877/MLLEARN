@@ -85,12 +85,12 @@ Note: Results apply to the particular split and experiment; they do not establis
 -[x] Gaussian Naive Bayes
 -[x] Multinomial Naive Bayes
 -[x] CategoricalS Naive Bayes
-
+#### Decision trees
+-[x] decision trees completedS
 
 ## In Progress
 
 ### Phase 2 — Next Algorithm
-- [ ] Decision Trees
 - [ ] Random Forest
 - [ ] Gradient Boosting
 - [ ] Support Vector Machines
