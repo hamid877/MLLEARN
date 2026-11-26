@@ -88,11 +88,12 @@ Note: Results apply to the particular split and experiment; they do not establis
 #### Decision trees
 -[x] decision trees completed
 - [x] Random Forest completed
+- [X] Gradient Boosting completed
 ## In Progress
 
 ### Phase 2 — Next Algorithm
 
-- [ ] Gradient Boosting
+
 - [ ] Support Vector Machines
 
 ## Future Phases
